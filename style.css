@@ -1,0 +1,1665 @@
+body {
+    background-image:
+            url("pictures/background.jpg");
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    -webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: goldenrod;
+    font-size: 85px;
+    font-family: Papyrus;
+    font-weight: bold;
+    margin-left: 30%;
+}
+
+a:visited {
+    text-decoration: none;
+    decoration: none;
+}
+
+.dropdown button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+.dropdown button {
+    text-decoration: none;
+    border: white 2px;
+    -webkit-text-stroke: 2px goldenrod;
+    font-family: Papyrus;
+    font-size: 32px;
+    cursor: pointer;
+    background-color: black;
+
+}
+
+.dropdown a {
+    -webkit-text-stroke: 2px goldenrod;
+    text-decoration: none;
+}
+
+.dropdown li:hover {
+    background-color: rgb(196, 196, 191);
+}
+
+.dropdown li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-family: Papyrus;
+    font-size: 20px;
+    position: relative;
+    float: right;
+    margin-right: 3%;
+}
+
+
+.dropdown ul {
+    margin-top: -40px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    list-style: none;
+    border-radius: 0px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+    background-image: url("https://static.wikia.nocookie.net/leagueoflegends/images/5/58/Controller_icon.png/revision/latest/scale-to-width-down/20?cb=20181117143552");
+    background-repeat: no-repeat;
+    background-size: 0px;
+    right: 0px;
+    white-space: nowrap;
+    margin-right: 40%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.hjem a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bakgrunnspecialist {
+    background-color: rgba(255,255,255,0.5);
+    width: 100%;
+    margin-top: 6.4%;
+    height: 650px;
+}
+
+.bakgrunntank {
+    background-color: rgba(255,255,255,0.5);
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.bakgrunnslayer {
+    background-color: rgba(255,255,255,0.5);
+    width: 160%;
+    height: 650px;
+}
+
+.bakgrunn {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    height: 450px;
+}
+
+.bakgrunnmage {
+    background-color: rgba(255,255,255,0.5);
+    width: 170%;
+    height: 650px;
+}
+
+.rowspec {
+    display: flex;
+    margin-top: 4%;
+    margin-left: 1%;
+}
+
+.rowtank {
+    display: flex;
+    margin-top: 4%;
+    margin-left: 0.1%;
+    margin-bottom: -1%;
+}
+
+.columnspec {
+    padding: 1px;
+    margin-top: -20px;
+    position: relative;
+    width: 50%;
+}
+
+.row {
+    display: flex;
+    margin-top: 4%;
+    margin-left: 0.1%;
+}
+
+.column {
+    padding: 1px;
+    margin-top: -20px;
+    position: relative;
+    width: 50%;
+    margin-left: 3%;
+}
+
+.picturespecialist{
+    width: 160px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+.image {
+    background-color: rgba(218, 165, 32, 0.5);
+    height: 220px;
+    width: 180px;
+    margin-left: 15px;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .7s ease;
+    background-color: pink;
+    border-radius: 25%;
+}
+
+.columnspec:hover .overlay {
+    opacity: 1;
+
+}
+
+
+.box {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.overlay .p46 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p46 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p46 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p46 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p46 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 46) / 100);
+    stroke: red;
+}
+
+.overlay .p1 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p1 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p1 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p1 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p1 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 1) / 100);
+    stroke: blue;
+}
+
+.overlay .p51 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p51 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p51 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p51 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p51 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 51) / 100);
+    stroke: darkgreen;
+}
+
+.overlay .p5 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p5 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p5 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p5 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p5 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 5) / 100);
+    stroke: blue;
+}
+
+.overlay .p2 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p2 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p2 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p2 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p2 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 2) / 100);
+    stroke: blue;
+}
+
+.overlay .p53 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p53 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p53 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p53 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p53 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 53) / 100);
+    stroke: darkgreen;
+}
+
+.overlay .p47 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p47 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p47 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p47 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p47 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 47) / 100);
+    stroke: red;
+}
+
+.overlay .p4 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p4 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p4 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p4 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p4 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 4) / 100);
+    stroke: blue;
+}
+
+.overlay .p2 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p2 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p2 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p2 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p2 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 2) / 100);
+    stroke: blue;
+}
+
+.overlay .p50 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p50 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p50 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p50 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p50 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 50) / 100);
+    stroke: blue;
+}
+
+.overlay .p8 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p8 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p8 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p8 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p8 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 8) / 100);
+    stroke: blue;
+}
+
+.overlay .p9 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p9 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p9 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p9 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p9 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 9) / 100);
+    stroke: blue;
+}
+
+.overlay .p3 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p3 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p3 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p3 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p3 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 3) / 100);
+    stroke: blue;
+}
+
+.overlay .p52 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p52 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p52 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p52 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p52 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 52) / 100);
+    stroke: darkgreen;
+}
+
+.overlay .p49 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p49 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p49 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p49 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p49 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 49) / 100);
+    stroke: red;
+}
+
+.overlay .p10 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p10 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p10 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p10 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p10 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 10) / 100);
+    stroke: blue;
+}
+
+.overlay .p48 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p48 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p48 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p48 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p48 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 48) / 100);
+    stroke: red;
+}
+
+.overlay .p11 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p11 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p11 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p11 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p11 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 11) / 100);
+    stroke: blue;
+}
+
+.overlay .p21 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p21 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p21 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p21 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p21 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 21) / 100);
+    stroke: blue;
+}
+
+.overlay .p12 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p12 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p12 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p12 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p12 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 12) / 100);
+    stroke: blue;
+}
+
+.overlay .p6 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p6 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p6 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p6 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p6 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 6) / 100);
+    stroke: blue;
+}
+
+.overlay .p19 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p19 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p19 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p19 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p19 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 19) / 100);
+    stroke: blue;
+}
+
+.overlay .p30 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p30 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p30 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p30 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p30 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 30) / 100);
+    stroke: blue;
+}
+
+.overlay .p45 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p45 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p45 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p45 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p45 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 45) / 100);
+    stroke: red;
+}
+
+.overlay .p35 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p35 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p35 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p35 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p35 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 35) / 100);
+    stroke: blue;
+}
+
+.overlay .p22 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p22 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p22 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p22 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p22 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 22) / 100);
+    stroke: blue;
+}
+
+.overlay .p7 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p7 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p7 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p7 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p7 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 7) / 100);
+    stroke: blue;
+}
+
+.overlay .p16 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p16 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p16 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p16 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p16 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 16) / 100);
+    stroke: blue;
+}
+
+.overlay .p15 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p15 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p15 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p15 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p15 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 15) / 100);
+    stroke: blue;
+}
+
+.overlay .p13 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p13 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p13 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p13 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p13 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 13) / 100);
+    stroke: blue;
+}
+
+.overlay .p41 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p41 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p41 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p41 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p41 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 19) / 100);
+    stroke: blue;
+}
+
+.overlay .p15 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p15 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p15 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p15 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p15 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 15) / 100);
+    stroke: blue;
+}
+
+.overlay .p18 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p18 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p18 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p18 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p18 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 18) / 100);
+    stroke: blue;
+}
+
+.overlay .p14 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p14 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p14 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p14 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p14 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 14) / 100);
+    stroke: blue;
+}
+
+.overlay .p26 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p26 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p26 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p26 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p26 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 26) / 100);
+    stroke: blue;
+}
+
+.overlay .p27 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p27 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p27 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p27 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p27 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 27) / 100);
+    stroke: blue;
+}
+
+.overlay .p20 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p20 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p20 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p20 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p20 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 20) / 100);
+    stroke: blue;
+}
+
+.overlay .p17 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p17 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p17 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p17 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p17 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 17) / 100);
+    stroke: blue;
+}
+
+.overlay .p31 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p31 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p31 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p31 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p31 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 31) / 100);
+    stroke: blue;
+}
+
+.overlay .p36 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p36 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p36 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p36 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p36 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 36) / 100);
+    stroke: blue;
+}
+
+.overlay .p59 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p59 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p59 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p59 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p59 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 59) / 100);
+    stroke: blue;
+}
+
+.overlay .p54 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay .p54 svg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.overlay .p54 svg circle {
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+}
+
+.box .p54 svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: white;
+}
+
+.box .p54 svg circle:nth-child(2) {
+    stroke-dashoffset: calc(170 - (170 * 54) / 100);
+    stroke: darkgreen;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.number h2 {
+    font-size: 16px;
+}
+
+.number h2 span {
+    font-size: 12px;
+}
+
+.ptext {
+    padding: 10px 0 0;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: -35px;
+    margin-left: 70px;
+}
+
+::-webkit-scrollbar {
+    width: 22px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gold;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: goldenrod;
+}
+
+.kortflipp {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.kort-innsiden {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.kortflipp:hover .kort-innsiden {
+    transform: rotateY(180deg);
+}
+
+.kort-forsiden, .kort-tilbake {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.kort-forsiden {
+    background-color: #bbb;
+    color: black;
+}
+
+.kort-tilbake {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10%;
+    height: 360px;
+}
+
+h4 {
+    color: goldenrod;
+    margin-left: 14%;
+    margin-top: 11%;
+    font-size: 24px;
+}
+
+.navn {
+    font-size: 18px;
+    margin-left: 5%;
+    color: goldenrod;
+    background-color: black;
+    margin-right: 16%;
+}
